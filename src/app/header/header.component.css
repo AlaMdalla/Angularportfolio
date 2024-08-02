@@ -1,0 +1,109 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em    3%;
+    margin: 0 5%;
+}
+.logo{
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 1.2rem;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+   color: #0088a9;
+}
+button{
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 3.125rem;
+    cursor:pointer;
+    transition: all 0.3s ease 0s; 
+}
+button :hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+#icons{
+    display: none;
+    cursor: pointer;
+}
+@media(max-width:680px){
+    #icons{
+        display: block;
+   
+    }
+    #icons::before{
+      content: "\2630";
+      color: #edf0f1;
+  
+    }  
+    .active #icons::before{
+        content: "\2715";
+      color: #edf0f1;
+    }
+    nav ul{
+        position: fixed;
+        left: -100%;
+        top: 15%;
+     
+        display: flex;
+        flex-direction: column;
+        background: #24252A;
+        width: 100%;
+        text-align: center;
+        transition: 0.25s;
+
+
+    }
+    nav li{
+        padding: 3px 0;
+        
+        margin-top: 0.8em;
+    }
+    nav li a {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    nav li:hover{
+        background: #282a34;
+    }
+    li,a,button{
+        font-family: "Montserrat",sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: #edf0f1;
+        text-decoration: none;
+    }
+    nav.active ul{
+left: 0;
+    }
+}

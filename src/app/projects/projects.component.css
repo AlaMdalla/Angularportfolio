@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-separator {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+#home__title {
+    color: #edf0f1;
+    text-align: center;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.5rem;
+    font-weight: 390;
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.projects {
+    background-color: #24252a;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusted for better spacing between columns */
+    max-width: 1200px;
+    padding: 0 20px; /* Added padding to avoid cards sticking to edges */
+}
+
+.project-card {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #eee;
+    line-height: 1.4;
+    font-weight: 150;
+    margin-bottom: 15px;
+}
+
+.project-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-link {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #fff;
+    color: #24252a;
+}
+
+.github-icon {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.github-icon i {
+    margin-right: 5px;
+}
+
+.project-card:hover .github-icon {
+    transform: translateX(-10px);
+    color: #24252a;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 10px; /* Adjusted padding for smaller screens */
+    }
+    .project-card {
+        width: calc(50% - 20px); /* Two cards per row on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-card {
+        width: calc(100% - 40px); /* One card per row on mobile devices */
+        margin: 20px 0;
+    }
+}

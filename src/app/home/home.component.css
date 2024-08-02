@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100&display=swap');
+
+:root {
+    --title-color: #ffffff; /* Replace with your title color */
+    --body-color: #your-body-color; /* Replace with your body color */
+  }
+  
+  
+  section {
+    padding-top: 6rem;
+    justify-content: center;
+ 
+  }
+  
+  #description {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5em;
+  }
+  
+  #home__title {
+    color: #edf0f1; 
+    text-align: center;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.5rem;
+    font-weight: 390;
+    font-size: 3rem;
+    font-family: "Montserrat",sans-serif;
+  }
+  #par_title{
+    color: #adbbc4; 
+    letter-spacing: 0.2px;
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: "Montserrat",sans-serif;
+
+
+
+  }
+  p{
+ 
+    font-family: "Montserrat",sans-serif;
+        font-size: 1em; 
+        line-height: 1.5; 
+        color: #ffffff; 
+            font-weight: 150;
+
+  }
+  #home_container{
+    display: flex;
+
+ 
+    justify-content: center;
+
+  }
+  /* photo part */
+
+  #photo_conatiner {
+    justify-content: center;
+    width: 20em;
+    
+    height: 30.45em;
+    border-radius: 9rem;
+    border: 2px solid;
+    border-color: #c8d0d5;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .home__perfil {
+    
+    width: 95%;
+    
+    height: 95%;
+    border-radius: 9rem;
+    background: linear-gradient( #3e5367, #1F2227);
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    aspect-ratio: 1/1;
+  }
+  #imgtest {
+    width: 100%;
+    border-radius: 5.5rem;
+
+
+    background: linear-gradient( #344F69, #1D2025);
+    
+
+    height: 100%; /* Make sure the image fills the container */
+  }
+  #about{
+    margin-left: 8em;
+    margin-right: 8em;
+    width :30%;
+    max-height: 33.45em;
+  }
+  #bio{
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  .social-icons{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  }
+  .social-icons a i {
+    font-size: 1.7rem; /* Adjust the size of the icons */
+    color: #edf0f1; /* Adjust the color of the icons */
+    margin: 0 10px; /* Add margin between icons if desired */
+  }
+
+  
+
+  @media(max-width:680px){
+  
+        
+ 
+  
+  
+  
+  
+  p{
+ 
+    font-family: "Montserrat",sans-serif;
+        font-size: 1.5em; 
+        line-height: 1.5; 
+        color: #ffffff; 
+            font-weight: 150;
+
+  }
+  #home_container{
+    display: block;
+
+  }
+  /* photo part */
+
+  #photo_conatiner {
+
+    width: 20em;
+    
+    height: 33.45em;
+    border: 2px solid;
+    border-color: #c8d0d5;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+
+    
+   
+  }
+  
+  .home__perfil {
+    width: 85%;
+    height: 90%;
+    border-radius: 8.5rem;
+    background: linear-gradient( #3e5367, #1F2227);
+    overflow: hidden;
+    display: flex;
+    aspect-ratio: 3/4;
+  }
+ 
+  #imgtest {
+    width: 100%;
+    border-radius: 5.5rem;
+
+
+    background: linear-gradient( #344F69, #1D2025);
+    
+
+    height: 100%; /* Make sure the image fills the container */
+  }
+  #about{
+   margin: 0;
+    width :100%;
+    max-height: 33.45em;
+  }
+  #bio{
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  .social-icons{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  }
+  .social-icons a i {
+    font-size: 1.7rem; /* Adjust the size of the icons */
+    color: #edf0f1; /* Adjust the color of the icons */
+    margin: 0 10px; /* Add margin between icons if desired */
+  }
+#par_title{
+text-align: center;}
+p{
+  text-align: center;
+}
+  
+#photo_conatiner {
+
+  margin: auto;
+
+
+  
+ 
+}
+  
+  }
