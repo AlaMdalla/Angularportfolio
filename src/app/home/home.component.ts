@@ -12,7 +12,7 @@ export class HomeComponent {
   projectCount:number=0
   projectStop:any = setInterval(()=>{
     this.projectCount++;
-    if(this.projectCount==8){
+    if(this.projectCount==10){
       clearInterval(this.projectStop)
     }
   },70)
