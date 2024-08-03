@@ -56,10 +56,10 @@
 
   #photo_conatiner {
     justify-content: center;
-    width: 20em;
+    width: 25em;
     
-    height: 30.45em;
-    border-radius: 9rem;
+    height: 25.45em;
+    border-radius: 8rem;
     border: 2px solid;
     border-color: #c8d0d5;
     display: flex;
