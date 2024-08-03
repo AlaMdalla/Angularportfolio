@@ -9,5 +9,12 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   email ='alamdalla11@gmail.com';
+  projectCount:number=0
+  projectStop:any = setInterval(()=>{
+    this.projectCount++;
+    if(this.projectCount==8){
+      clearInterval(this.projectStop)
+    }
+  },70)
 
 }
