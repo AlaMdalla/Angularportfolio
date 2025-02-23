@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  email ='alamdalla11@gmail.com';
+  email ='alamdalla@proton.me';
   projectCount:number=0
   projectStop:any = setInterval(()=>{
     this.projectCount++;

@@ -1,220 +1,181 @@
 
 :root {
-    --title-color: #ffffff; /* Replace with your title color */
-    --body-color: #your-body-color; /* Replace with your body color */
-  }
-  
-  
-  section {
-    padding-top: 6rem;
-    justify-content: center;
- 
-  }
-  
-  #description {
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5em;
-  }
-  
-  #home__title {
-    color: #edf0f1; 
-    text-align: center;
-    letter-spacing: 0.3px;
-    margin-bottom: 0.5rem;
-    font-weight: 390;
-    font-size: 3rem;
-    font-family: "Montserrat",sans-serif;
-  }
-  #par_title{
-    color: #adbbc4; 
-    letter-spacing: 0.2px;
-    font-size: 1.2em;
-    font-weight: 400;
-    font-family: "Montserrat",sans-serif;
+  --title-color: #ffffff;
+  --body-color: #your-body-color;
+}
 
+section {
+  padding-top: 6rem;
+  justify-content: center;
+}
 
+#description {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5em;
+}
 
-  }
-  p{
- 
-    font-family: "Montserrat",sans-serif;
-        font-size: 1em; 
-        line-height: 1.5; 
-        color: #ffffff; 
-            font-weight: 150;
+#home__title {
+  color: #edf0f1;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin-bottom: 0.5rem;
+  font-weight: 390;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
 
-  }
-  #home_container{
-    display: flex;
+#par_title {
+  color: #adbbc4;
+  letter-spacing: 0.2px;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
 
- 
-    justify-content: center;
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #ffffff;
+  font-weight: 150;
+}
 
-  }
-  /* photo part */
+#home_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 
-  #photo_conatiner {
-    justify-content: center;
-    width: 25em;
-    
-    height: 25.45em;
-    border-radius: 8rem;
-    border: 2px solid;
-    border-color: #c8d0d5;
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
-  
-  .home__perfil {
-    
-    width: 95%;
-    
-    height: 95%;
-    border-radius: 9rem;
-    background: linear-gradient( #3e5367, #1F2227);
-    align-items: center;
-    overflow: hidden;
-    display: flex;
-    aspect-ratio: 1/1;
-  }
-  #imgtest {
-    width: 100%;
-    border-radius: 5.5rem;
+#photo_container {
+  width: 25em;
+  height: 25.45em;
+  border-radius: 8rem;
+  border: 2px solid #c8d0d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
 
+#photo_container:hover {
+  transform: scale(1.05);
+}
 
-    background: linear-gradient( #344F69, #1D2025);
-    
+.home__perfil {
+  width: 95%;
+  height: 95%;
+  border-radius: 9rem;
+  background: linear-gradient(#3e5367, #1F2227);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    height: 100%; /* Make sure the image fills the container */
-  }
-  #about{
-    margin-left: 8em;
-    margin-right: 8em;
-    width :30%;
-    max-height: 33.45em;
-  }
-  #bio{
-    margin-top: 3em;
-    margin-bottom: 3em;
-  }
-  .social-icons{
-    display: flex;
+#imgtest {
+  width: 100%;
+  height: 100%;
+  border-radius: 5.5rem;
+  object-fit: cover;
+}
+
+#about {
+  margin-left: 8em;
+  margin-right: 8em;
+  width: 30%;
+  max-height: 33.45em;
+}
+
+#bio {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.social-icons {
+  display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 1em;
-  }
-  .social-icons a i {
-    font-size: 1.7rem; /* Adjust the size of the icons */
-    color: #edf0f1; /* Adjust the color of the icons */
-    margin: 0 10px; /* Add margin between icons if desired */
-  }
+}
 
-  h2{
-    color: #ffffff; 
-    font-size: 1.7rem; /* Adjust the size of the icons */
+.social-icons a i {
+  font-size: 1.7rem;
+  color: #edf0f1;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
 
-  }
+.social-icons a i:hover {
+  color: #0077b5; /* LinkedIn color */
+}
 
-  @media(max-width:680px){
-  
-    h2{
-      text-align: center
-  
-    }
-        
- 
-  
-  
-  
-  
-  p{
- 
-    font-family: "Montserrat",sans-serif;
-        font-size: 1.5em; 
-        line-height: 1.5; 
-        color: #ffffff; 
-            font-weight: 150;
-
-  }
-
-  #home_container{
-    display: block;
-
-  }
-  /* photo part */
-
-  #photo_conatiner {
-
-    width: 20em;
-    
-    height: 25.45em;
-    border: 2px solid;
-    border-color: #c8d0d5;
-    border-radius: 10rem;
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-
-    
-   
-  }
-  
-  .home__perfil {
-    width: 85%;
-    height: 90%;
-    border-radius: 8.5rem;
-    background: linear-gradient( #3e5367, #1F2227);
-    overflow: hidden;
-    display: flex;
-    aspect-ratio: 3/4;
-  }
- 
-  #imgtest {
-    width: 100%;
-    border-radius: 5.5rem;
-
-
-    background: linear-gradient( #344F69, #1D2025);
-    
-
-    height: 100%; /* Make sure the image fills the container */
-  }
-  #about{
-   margin: 0;
-    width :100%;
-    max-height: 33.45em;
-  }
-  #bio{
-    margin-top: 3em;
-    margin-bottom: 3em;
-  }
-
-  .social-icons{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1em;
-  }
-  .social-icons a i {
-    font-size: 1.7rem; /* Adjust the size of the icons */
-    color: #edf0f1; /* Adjust the color of the icons */
-    margin: 0 10px; /* Add margin between icons if desired */
-  }
-#par_title{
-text-align: center;}
-p{
+h2 {
+  color: #ffffff;
+  font-size: 1.7rem;
   text-align: center;
 }
-  
-#photo_conatiner {
 
-  margin: auto;
-
-
-  
- 
-}
-  
+@media (max-width: 680px) {
+  h2 {
+      text-align: center;
   }
+
+  p {
+      font-size: 1.5em;
+      text-align: center;
+  }
+
+  #home_container {
+      display: block;
+  }
+
+  #photo_container {
+      width: 20em;
+      height: 25.45em;
+      margin: auto;
+  }
+
+  .home__perfil {
+      width: 85%;
+      height: 90%;
+      border-radius: 8.5rem;
+  }
+
+  #about {
+      margin: 0;
+      width: 100%;
+  }
+
+  #bio {
+      margin-top: 3em;
+      margin-bottom: 3em;
+  }
+
+  .social-icons a i {
+      font-size: 1.7rem;
+  }
+
+  #par_title {
+      text-align: center;
+  }
+
+  p {
+      text-align: center;
+  }
+}
+
+#photo_container {
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  
+}
+
+#photo_container:hover {
+  transform: scale(1.05);
+}
+
+
