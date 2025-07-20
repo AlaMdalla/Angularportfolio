@@ -9,7 +9,7 @@ import Contact from "../components/Contact";
 
 export default function Home() {
   return (
-    <div className="font-sans min-h-screen bg-background text-foreground flex flex-col items-center px-0 sm:px-0">
+    <div className="font-sans min-h-screen bg-background text-foreground flex flex-col items-center px-4 sm:px-0">
       <Navbar />
       <main className="w-full flex flex-col items-center">
         <Hero />

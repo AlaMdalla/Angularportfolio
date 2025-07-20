@@ -48,7 +48,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="w-full max-w-3xl py-12 flex flex-col items-center">
+    <section id="experience" className="w-full max-w-3xl py-12 flex flex-col items-center px-4 sm:px-0">
       <h2 className="text-3xl font-semibold mb-8">Experience</h2>
       <ol className="relative border-l border-primary/30">
         {experiences.map((exp, i) => (
