@@ -20,7 +20,7 @@ export default function Hero() {
         <a href="https://linkedin.com/in/alamdalla" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin className="w-6 h-6 hover:text-primary" /></a>
       </div>
       <a
-  href="/files/Ala_Mdalla_Resume-2.pdf"
+  href="/files/Ala_Mdalla_Resume-1.pdf"
   download
   className="mt-4 inline-block px-6 py-2 rounded-full bg-primary text-background font-semibold shadow hover:bg-primary/80 transition-colors"
 >
