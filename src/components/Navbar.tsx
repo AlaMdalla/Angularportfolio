@@ -26,31 +26,45 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur border-b border-border flex items-center justify-between px-4 sm:px-12 py-3">
-      <div className="flex items-center gap-2 font-bold text-lg">
-        <span className="text-primary">Ala Mdalla</span>
+    <nav className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur border-b border-border flex items-center justify-between px-4 sm:px-12 py-3 animate-slide-in-down">
+      <div className="flex items-center gap-2 font-bold text-lg animate-fade-in-left">
+        <span className="text-primary hover:scale-105 transition-transform duration-200">Ala Mdalla</span>
       </div>
       <div className="hidden md:flex gap-6">
-        {navLinks.map((link) => (
+        {navLinks.map((link, index) => (
           <a
             key={link.href}
             href={link.href}
-            className="hover:text-primary transition-colors font-medium"
+            className="hover:text-primary transition-all duration-300 font-medium relative group"
+            style={{ animationDelay: `${index * 100}ms` }}
           >
             {link.label}
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
           </a>
         ))}
       </div>
       <div className="flex items-center gap-3">
-        <a href="https://github.com/alamdalla" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <a 
+          href="https://github.com/alamdalla" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          aria-label="GitHub"
+          className="hover:scale-110 transition-transform duration-200 hover:rotate-12"
+        >
           <Github className="w-5 h-5 hover:text-primary" />
         </a>
-        <a href="https://linkedin.com/in/alamdalla" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a 
+          href="https://linkedin.com/in/alamdalla" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          aria-label="LinkedIn"
+          className="hover:scale-110 transition-transform duration-200 hover:rotate-12"
+        >
           <Linkedin className="w-5 h-5 hover:text-primary" />
         </a>
         <button
           onClick={toggleDark}
-          className="ml-2 p-2 rounded hover:bg-muted transition-colors"
+          className="ml-2 p-2 rounded hover:bg-muted transition-all duration-300 hover:scale-110 hover:rotate-180"
           aria-label="Toggle dark mode"
         >
           {dark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
