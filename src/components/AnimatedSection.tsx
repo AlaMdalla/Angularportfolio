@@ -2,10 +2,10 @@ import { ReactNode } from 'react';
 import { useIntersectionObserver } from '../lib/useIntersectionObserver';
 
 interface AnimatedSectionProps {
-  children: ReactNode;
-  className?: string;
-  animation?: 'fade-in' | 'slide-up' | 'slide-left' | 'slide-right' | 'scale-in';
-  delay?: number;
+  readonly children: ReactNode;
+  readonly className?: string;
+  readonly animation?: 'fade-in' | 'slide-up' | 'slide-left' | 'slide-right' | 'scale-in';
+  readonly delay?: number;
 }
 
 export default function AnimatedSection({ 
